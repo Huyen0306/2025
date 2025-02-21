@@ -51,5 +51,45 @@ int main() {
 }
 
 ```
+---
+
+```
+// Bài tập ví dụ minh họa: Bài chuỗi xứng: aba = aba
+#include <bits/stdc++.h>
+using namespace std;
+// Bài đảo ngược chuỗi: aba => aba
+int main() {
+    string a = "abac";
+    string daoNguocA = "";
+
+    for (int i = a.size() - 1; i >= 0; i--) {
+        // Bước 1: Chạy i đúng như mình kiểm soát chưa.
+        // cout<<i;
+
+        // Bước 2: Xuất phần tử của mảng coi đúng như kiểm soát không.
+        // cout<<a[i];
+
+        // Bước 3: Giải theo lý thuyết.
+        daoNguocA = daoNguocA + a[i];
+    }
+
+    if (a == daoNguocA) {
+        cout<<"Doi xung";
+    } else {
+        cout<<"Khong xung";
+    }
+}
+
+// Đọc đề hiểu đề hỏi gì, và hiểu lý thuyết.
+// - Hỏi chuỗi đối xứng
+// - Lý thuyết: Sau khi đảo ngược: Ví dụ: abc => cba
+//              Đảo ngược xong phải giống ban đầu: Ví dụ: abba => abba
+
+// -----------
+// Suy ra 2 trường hợp
+// Đúng => aba = aba
+
+// Sai => abc = cba
+```
 
 
